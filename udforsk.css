@@ -7,41 +7,50 @@
 /***********style***********/
 
 h1 {
-    a;
+  font-weight: 300px;
+  font-size: 8vh;
+  text-align: center;
 }
 
+h2 {
+  font-weight: 300px;
+  font-size: 2vh;
+  text-align: center;
+}
 
+.info {
+  font-size: 18px;
+}
 
 /***********section***********/
 
 section {
+  padding: 15vw;
   min-height: 100vh;
-  width: 100%;
+  width: 100vw;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  background-color: #e1ea88;
-  height: 300vh;
-}
-
-.container 
-  height: 100%;
+  background-color: #ffffff;
 }
 
 .wrapper-2 {
   height: auto;
   width: auto;
   margin: auto;
-  display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
-.billede-1 {
-  width: 1080px;
+.container {
+  width: 100%vw;
   height: 0%;
   background: no-repeat center / cover;
   border-radius: 0%;
   margin-left: 0;
+}
+
+/********img********/
+
+.billede {
 }

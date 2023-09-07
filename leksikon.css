@@ -1,0 +1,118 @@
+@font-face {
+    font-family: Roboto;
+    src: url(font/Roboto-Thin.ttf);
+}
+
+@media (max-width: 500px) {
+    .lexicon {
+        display: list-item;
+    }
+}
+
+
+html {
+    background-color: #ECE4DC;
+    font-family: Roboto;
+}
+
+h1 {
+    text-align: center;
+    padding: 5%;
+}
+
+#lexiconGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.lexiconList {
+    background-color: #fff;
+    padding: 15px;
+    width: 100%;
+}
+
+.lexiconList img {
+    max-width: 100%;
+    height: auto;
+}
+
+.lexicon h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+@media (max-width: 800px) {
+    .lexiconTemplate {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .grid-item {
+        display: flex;
+        align-items: center;
+    }
+
+    .grid-item img {
+        max-width: 100px;
+        margin-right: 10px;
+    }
+}
+
+.logo {
+    color: green;
+    font-family: Roboto;
+    font-weight: bolder;
+}
+
+.logo span {
+    font-weight: bold;
+    color: #a23939; 
+}
+
+.grid-item {
+    border: 20px solid white;
+    background-color: white;
+    border-radius: 30%;
+    padding: 10px;
+    text-align: center;
+}
+
+.lexiconList img {
+    width: 100%;
+    height: auto;
+}
+
+li {
+    list-style: none;
+}
+
+.navbar {
+    font-family: Breadly;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+}
+
+.nav-menu {
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.logo {
+    font-size: 50px;
+}

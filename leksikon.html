@@ -11,42 +11,46 @@
     <title>VILD MAD: Leksikon</title>
 </head>
 
-<nav class="navbar">
-    <a href="leksikon.html" class="logo">VILD <span>MAD</span></a>
-
-        <ul class="nav-menu">
-
-            <li class="nav-item">
-                <a href="leksikon.html" class="nav-link">Sæsoner</a>
-            </li>
-
-            <li class="nav-item">
-                <a href="leksikon.html" class="nav-link">Leksikon</a>
-            </li>
-
-            <li class="nav-item">
-                <a href="leksikon.html" class="nav-link">Terræn</a>
-            </li>
-        </ul>
-</nav>
-
+<header>
+    <nav class="navbar">
+        <a href="leksikon.html" class="logo">VILD <span>MAD</span></a>
+    
+            <ul class="nav-menu">
+    
+                <li class="nav-item">
+                    <a href="leksikon.html" class="nav-link">Sæsoner</a>
+                </li>
+    
+                <li class="nav-item">
+                    <a href="leksikon.html" class="nav-link">Leksikon</a>
+                </li>
+    
+                <li class="nav-item">
+                    <a href="leksikon.html" class="nav-link">Terræn</a>
+                </li>
+            </ul>
+    </nav>
+    
+</header>
 <body>
 
+<main>
     <h1>Leksikon</h1>
     
-    <div id="lexiconGrid">
+    <section class="lexiconGrid">
 
         <template id="lexiconTemplate">
             <article class="lexiconList">
-                    <img src="img/super-mushroom.svg" alt="Svamp">
-                    <h2>Svamp 1</h2>
-                    <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam perspiciatis repellendus reprehenderit, adipisci voluptatum ut ullam veritatis possimus deserunt quisquam.</h3>
-                    <p class="readMore"><a href="#">Læs mere</a></p>
-                </div>
-                </div>
-        </article>
+                <p class="id">281</p>
+                <a class="billedeKlik" href="svamp.html">
+                    <img src="https://vildmadv2.vps.webdock.io/application/files/8916/2436/6915/Alm-pigsvamp_ravarekort_app.png" alt="Svamp">
+                </a>
+
+                <p class="title">Østershat</p>
+            </article>
         </template>
-</body>
+    </section>
+</main>
     
     
     <script src="leksikon.js"></script>

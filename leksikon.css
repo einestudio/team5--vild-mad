@@ -15,6 +15,40 @@ h1 {
     padding: 5%;
 }
 
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+select:hover {
+    cursor: pointer;
+}
+
+form {
+    padding: 5%;
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    background-color: grey;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
 #lexiconGrid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

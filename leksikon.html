@@ -6,18 +6,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex, nofollow">
-    <link rel="icon" type="image/icon" href="">    
+    <link rel="icon" type="image/icon" href="icon/favicon.png">    
     <link rel="stylesheet" href="leksikon.css">
     <title>VILD MAD: Leksikon</title>
 </head>
 
+            <header>
+                
+                <nav class="navbar">
+                <a href="leksikon.html" class="logo"></a>
+        
+                    <ul class="nav-menu">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">LEKSIKON</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link">SKOVE</a>
+                        </li>
+                    </ul>    
+                    
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                    
+            </header>
+
 <body>
 <main>
 
-    <h1>LÆKSIKON</h1>
+    <h1 class="heading">LEKSIKON</h1>
 
     <form>
-        <label for="mushroom">Vælg en svamp: </label>
+        <h2>Vælg en svamp:</h2>
+        <label for="mushroom"></label>
         <select id="mushroom" name="mushroom">
             <option value="Brun Skælrørhat">Brun Skælrørhat</option>
             <option value="Brungul Rørhat">Brungul Rørhat</option>
@@ -42,15 +65,13 @@
     </form>
     
     <div class="lexiconGrid">
-
-
         <template id="lexiconTemplate">
             <article class="lexiconList">
                 <p class="id"></p>
                 <a class="billedeKlik" href="svamp.html">
                     <img src="" alt="Svamp">
+                    <p class="title"></p>
                 </a>
-                <p class="title"></p>
             </article>
         </template>
     </div>
@@ -60,3 +81,4 @@
     <script src="leksikon.js"></script>
 </body>
 </html>
+

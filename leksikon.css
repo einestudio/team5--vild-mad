@@ -103,10 +103,6 @@ li {
     background-color: #D5F2E3;
 }
 
-img:hover {
-    transition: transform 1s ease;
-}
-
 .lexiconList {
     padding: 10px;
     text-align: center;
@@ -213,6 +209,14 @@ input {
     font-size: 30px;
     border-radius: 5%;
     text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+}
+
+.title:hover {
+    color: #3a3328;
+}
+
+a {
     text-decoration: none;
 }
 

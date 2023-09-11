@@ -1,24 +1,163 @@
-@media (max-width: 500px) {
-    .lexicon {
-        display: list-item;
-    }
+@font-face {
+    font-family: Baloo;
+    src: url(font/Baloo-Regular.ttf);
 }
 
+@font-face {
+    font-family: Suisse;
+    src: url(font/SuisseIntl-SemiBold\(2\).ttf);
+}
+
+* {
+    margin: 0;
+}
 
 html {
-    background-color: #ECE4DC;
+    background-color: #D5F2E3;
     font-family: Roboto;
 }
 
-h1 {
+main {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+header {
+    background-color: #1AA758;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    margin-bottom: 10%;
+}
+
+.navbar {
+    min-height: 70px;
+    font-family: Breadly;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1300px;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.nav-item {
+    background-color: #005238;
+    padding: 7%;
+    border-radius: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nav-link {
+    transition: 0.7 ease;
+}
+
+.nav-link:hover {
+    color: #8fd5ad;;
+}
+
+.nav-menu a, .logo {
+    text-decoration: none;
+    color: #005238;
+    font-family: Baloo;
+    font-size: 1.5em;
+    color: #D5F2E3;
+}
+
+li {
+    list-style: none;
+}
+
+.logo {
+    background-image: url('icon/favicon.png');
+    width: 160px;
+    height: 160px;
+    background-size: cover;    
+}
+
+.lexiconGrid {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    margin-right: 8%;
+}
+
+.bar {
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #D5F2E3;
+}
+
+.lexiconList {
+    padding: 10px;
     text-align: center;
+}
+
+.lexiconList p.id {
+    font-weight: bold;
+}
+
+.lexiconList img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 100%;
+    outline: 8px solid rgb(239, 102, 5);
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.lexiconList img:hover {
+    outline: 8px solid #5E503F;
+}
+
+.heading {
+    text-align: center;
+    margin: 10%;
     padding: 5%;
+    font-family: Baloo;
+    font-size: 7cqw;
+    border-radius: 100%;
+    background-color: #005238;
+    color: #D5F2E3;
+    text-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    font-family: Suisse;
+    font-weight:lighter;
 }
 
 label {
     display: block;
     margin-bottom: 10px;
     font-weight: bold;
+}
+
+#mushroom {
+    background-color: #FFFEF4;
+}
+
+#mushroom:hover {
+    background-color: #e6e5db;
+}
+
+p {
+    font-family:  Helvetica;
 }
 
 select {
@@ -34,7 +173,7 @@ select:hover {
 }
 
 form {
-    padding: 5%;
+    padding-bottom: 5%;
 }
 
 input {
@@ -42,7 +181,7 @@ input {
     width: 100%;
     padding: 10px;
     color: white;
-    background-color: grey;
+    background-color: #005238;
     border: none;
     border-radius: 5px;
     font-size: 16px;
@@ -52,14 +191,6 @@ input {
 #lexiconGrid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-.lexiconList {
-    background-color: #fff;
-    padding: 15px;
-    width: 100%;
-    border-radius: 2%;
 }
 
 .lexiconList img {
@@ -72,79 +203,83 @@ input {
     margin: 10px 0;
 }
 
-@media (max-width: 800px) {
-    .lexiconTemplate {
-        display: flex;
-        flex-direction: column;
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    .grid-item {
-        display: flex;
-        align-items: center;
-    }
-
-    .grid-item img {
-        max-width: 100px;
-        margin-right: 10px;
-    }
+.title {
+    color: #5E503F;
+    padding: 5%;
+    font-size: 30px;
+    border-radius: 5%;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
 }
 
-.logo {
-    color: green;
-    font-family: Roboto;
-    font-weight: bolder;
+.title:hover {
+    color: #3a3328;
 }
 
-.logo span {
-    font-weight: bold;
-    color: #a23939; 
-}
-
-.grid-item {
-    border-radius: 30%;
-    padding: 10px;
-    text-align: center;
-}
-
-.lexiconList img {
-    width: 100%;
-    height: auto;
-}
-
-li {
-    list-style: none;
+a {
+    text-decoration: none;
 }
 
 .id {
     display: none;
 }
 
-.navbar {
-    font-family: Breadly;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2%;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 5%;
-}
+@media (max-width: 790px){
+   
+    .lexiconGrid {
+        display: list-item;
+    }
 
-.nav-menu {
-    position: sticky;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 100px;
-}
+    .navbar {
+        position: relative;
+        padding: 0;
+        margin: 0;
+    }
 
-a {
-    text-decoration: none;
-    color: black;
-}
+    .nav-menu {
+        position: fixed;
+        left: -110%;
+        top: 0;
+        height: 100vh; /* Fill the entire screen height */
+        background-color: #1AA758;
+        width: 100%;
+        text-align: center;
+        transition: 0.6s;
+    }
 
-.logo {
-    font-size: 50px;
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-item {
+        background-color: transparent;
+        box-shadow: none;
+        font-size: 20px;
+    }
+
+    .nav-item:hover {
+        color: #8fd5ad;
+    }
+    
+    .nav-menu {
+        top: 150px;
+        display: list-item;
+        gap: 60px;
+    }
 }

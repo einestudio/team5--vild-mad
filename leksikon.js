@@ -1,3 +1,21 @@
+// HAMBURGER MENU
+
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active")
+    navMenu.classList.toggle("active")
+})
+
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}))
+
+
+// PRODUCTLIST
+
 const urlParams = new URLSearchParams(window.location.search);
 const mushroom = urlParams.get("mushroom");
 const categoryParam = mushroom ? "?mushroom="+mushroom :''
@@ -31,7 +49,19 @@ function showMushroom(mushroom) {
     
     copy.querySelector(".billedeKlik").setAttribute("href", `svamp.html?id=${mushroom.id}`);
     document.querySelector(".lexiconGrid").appendChild(copy);
-
 }
+
+// FORMS
+
+const form = document.querySelector('form');
+
+form.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const select = document.getElementById('mushroom');
+    const selectedOptionValue = select.id;
+
+    window.location.href = `svamp.html?id=${selectedOptionValue}`;
+});
 
 

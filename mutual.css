@@ -16,6 +16,10 @@ html {
     background-color: #D5F2E3;
 }
 
+main {
+    margin: 0 10% 10% 10%;
+}
+
 header {
     background-color: #1AA758;
     padding: 20px 20px 20px;
@@ -73,13 +77,6 @@ li {
     background-size: cover;    
 }
 
-.lexiconGrid {
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 100px;
-}
-
 .hamburger {
     display: none;
     cursor: pointer;
@@ -95,136 +92,22 @@ li {
     background-color: #D5F2E3;
 }
 
-.lexiconList {
-    padding: 10px;
-    text-align: center;
-}
-
-.lexiconList p.id {
-    font-weight: bold;
-}
-
-.lexiconList img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 100%;
-    outline: 8px solid #5E503F;;
-    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.4);
-}
-
-.lexiconList img:hover {
-    outline: 8px solid #ef6605;
-}
-
-@keyframes bounce {
-    0%, 100% 
-        { transform: translateY(0); }
-    25% 
-        { transform: translateY(-10px); }
-    50% 
-        { transform: translateY(0); }
-    75% 
-        { transform: translateY(-5px); } 
-}
-
-.heading {
-    text-align: center;
-    margin-top: 10%;
-    margin-bottom: 5%;
-    font-family: Baloo;
-    font-size: 7cqw;
-    border-radius: 100%;
-    background-color: #005238;
-    color: #D5F2E3;
-    text-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    animation: bounce 2s infinite; 
-}
-
-
 h2 {
     font-family: Suisse;
     font-weight:lighter;
 }
 
 label {
-    display: block;
-    margin-bottom: 10px;
+    font-size: 20px;
     font-weight: bold;
-}
-
-#mushroom {
-    background-color: #FFFEF4;
-}
-
-#mushroom:hover {
-    background-color: #e6e5db;
+    font-family: Baloo;
+    color: #005238;
 }
 
 p {
     font-family:  Helvetica;
 }
 
-select {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-select:hover {
-    cursor: pointer;
-}
-
-form {
-    padding-bottom: 5%;
-    margin: 0 auto;
-}
-
-input {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    color: white;
-    background-color: #EF6605;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-input:hover {
-    background-color: #5E503F;
-}
-
-#lexiconGrid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-
-.lexiconList img {
-    max-width: 100%;
-    height: auto;
-}
-
-.lexicon h3 {
-    font-size: 18px;
-    margin: 10px 0;
-}
-
-.title {
-    color: #5E503F;
-    font-family: Baloo;
-    padding: 5%;
-    font-size: 30px;
-    border-radius: 5%;
-    text-decoration: none;
-}
-
-.title:hover {
-    color: #EF6605;
-}
 
 a {
     text-decoration: none;
@@ -267,10 +150,6 @@ footer a {
     form {
         margin-top: 20%;
         margin-bottom: 20%;
-    }
-
-    .lexiconGrid {
-        display: list-item;
     }
 
     .navbar {

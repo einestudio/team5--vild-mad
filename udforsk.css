@@ -1,78 +1,145 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@font-face {
+  font-family: Baloo;
+  src: url(font/Baloo-Regular.ttf);
 }
 
-
-
-h1 {
-  font-weight: 300px;
-  font-size: 8vh;
-  text-align: center;
+@font-face {
+  font-family: Suisse;
+  src: url(font/SuisseIntl-SemiBold\(2\).ttf);
 }
 
-h2 {
-  font-weight: 300px;
-  font-size: 2vh;
-  text-align: center;
-}
-
-.info {
-  font-size: 18px;
-}
-
-
-
-section {
-  padding: 15vw;
-  min-height: 100vh;
-  width: 100vw;
+.grid_container{
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: #ffffff;
+  overflow-x: hidden; 
+  display: grid;
+  grid-template-columns:repeat(2, 1fr);
+  justify-items: center; 
+  align-items: center; 
+  margin-bottom: 100px;
+  
+  
+} 
+.venstre {
+  max-width: 80%; 
+
+animation: bounce 3s infinite;
+}
+.venstre:hover{
+  background-color: #E7732A;  /*orange eller grøn? eller an af hver?*/
+  border-radius: 50%;
+  animation: bounce 2s infinite;
+  max-width: 75%;
+
+}
+.højre {
+  max-width: 80%; 
+  animation: bounce 3s infinite;
+}
+.højre:hover{
+  background-color:  #E7732A; 
+  border-radius: 50%;
+  animation: bounce 2s infinite;
+  max-width: 75%;
+
+
 }
 
-.wrapper-2 {
-  height: auto;
-  width: auto;
-  margin: auto;
-  justify-content: center;
+@keyframes bounce {
+  0%, 100% 
+      { transform: translateY(0); }
+  25% 
+      { transform: translateY(-10px); }
+  50% 
+      { transform: translateY(0); }
+  75% 
+      { transform: translateY(-5px); } 
+}
+
+#klikbilledevenstre,
+#klikbilledehøjre {
+  max-width: 100%; 
+  height: auto; 
   align-items: center;
 }
 
-.container {
-  width: 100%vw;
-  height: 0%;
-  background: no-repeat center / cover;
-  border-radius: 0%;
-  margin-left: 0;
+
+.vælgenskov{
+    text-align: center;
+    font-family: Baloo;
+    color: #D5F2E3;
+    background-color:  #005238;
+    padding: 5px; 
+    border-radius: 50px; 
+    margin: 10px auto;
+    max-width: 400px;
+
 }
 
+@media (max-width: 790px) {
+  .grid_container {
+    display: flex;
+    overflow-x: hidden;
+    flex-direction: column; /* Stak elementer ovenpå hinanden */
+    justify-content: center; /* Centrer elementerne vandret */
+    align-items: center; /* Centrer elementerne lodret */
+  }
 
+  .venstre {
+    max-width: 80%;
+    animation: bounce 3s infinite;
+  }
 
-.billede {
+  .venstre:hover {
+    background-color: #E7732A;
+    border-radius: 50%;
+    animation: bounce 2s infinite;
+    max-width: 80%;
+  }
+
+  .højre {
+    max-width: 80%;
+    animation: bounce 3s infinite;
+  }
+
+  .højre:hover {
+    background-color: #E7732A;
+    border-radius: 50%;
+    animation: bounce 2s infinite;
+    max-width: 80%;
+  }
+
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    25% {
+      transform: translateY(-10px);
+    }
+    50% {
+      transform: translateY(0);
+    }
+    75% {
+      transform: translateY(-5px);
+    }
+  }
+
+  #klikbilledevenstre,
+  #klikbilledehøjre {
+    max-width: 100%;
+    height: auto;
+    align-items: center;
+  }
+
+  .vælgenskov {
+    text-align: center;
+    font-family: Baloo;
+    color: #D5F2E3;
+    background-color: #005238;
+    padding: 5px;
+    border-radius: 50px;
+    margin: 10px auto;
+    max-width: 400px;
+    
+  }
 }
-*/
+

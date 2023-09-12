@@ -1,0 +1,87 @@
+@font-face {
+    font-family: Baloo;
+    src: url(font/Baloo-Regular.ttf);
+}
+
+@font-face {
+    font-family: Suisse;
+    src: url(font/SuisseIntl-SemiBold\(2\).ttf);
+}
+
+.container {
+    position: relative;
+    text-align: center;
+}
+
+.skov {
+    width: 800px;
+    height: 500px; 
+    background-image: url('img/naaleskov.jpg'); 
+    background-size: cover;
+    background-position: center;
+    border-radius: 10%;
+    margin: 50px auto 0; 
+}
+
+.fungi{
+    position: absolute;
+    top: -300px; 
+    left: 8%; 
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    background-image: url('img/fungikids.png'); 
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 800px;
+    width:800px;
+}
+
+.knap {
+    position: absolute;
+    top: 75%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    display: inline-block;
+    padding: 40px 100px;
+    background-color: #E7732A; 
+    color:  #D5F2E3; 
+    text-decoration: none;
+    font-size: 40px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+    font-family: Suisse;
+}
+
+
+.knap:hover {
+    background-color: #005238; 
+}
+
+@media (max-width: 790px) {
+
+    .skov {
+        width: auto;
+    }
+
+    .fungi {
+        position: absolute;
+        top: -200px;
+        left: 8%;
+        right: 0;
+        bottom: 0;
+        margin: 0 auto;
+        background-size: contain;
+        height: auto;
+        width: 90%;
+
+    }
+
+    .knap {
+        top: 90%;
+        padding: 20px 40px;
+        font-size: 24px;
+        border-radius: 20px;
+    }
+}

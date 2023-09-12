@@ -1,106 +1,8 @@
-@font-face {
-    font-family: Baloo;
-    src: url(font/Baloo-Regular.ttf);
-}
-
-@font-face {
-    font-family: Suisse;
-    src: url(font/SuisseIntl-SemiBold\(2\).ttf);
-}
-
-* {
-    margin: 0;
-}
-
-html {
-    background-color: #D5F2E3;
-    font-family: Roboto;
-}
-
-main {
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-header {
-    background-color: #1AA758;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    margin-bottom: 10%;
-}
-
-.navbar {
-    min-height: 70px;
-    font-family: Breadly;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1300px;
-}
-
-.nav-menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 60px;
-}
-
-.nav-item {
-    background-color: #005238;
-    padding: 7%;
-    border-radius: 100%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.nav-link {
-    transition: 0.7 ease;
-}
-
-.nav-link:hover {
-    color: #8fd5ad;;
-}
-
-.nav-menu a, .logo {
-    text-decoration: none;
-    color: #005238;
-    font-family: Baloo;
-    font-size: 1.5em;
-    color: #D5F2E3;
-}
-
-li {
-    list-style: none;
-}
-
-.logo {
-    background-image: url('icon/favicon.png');
-    width: 160px;
-    height: 160px;
-    background-size: cover;    
-}
-
 .lexiconGrid {
     list-style: none;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-.hamburger {
-    display: none;
-    cursor: pointer;
-    margin-right: 8%;
-}
-
-.bar {
-    display: block;
-    width: 30px;
-    height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background-color: #D5F2E3;
+    gap: 100px;
 }
 
 .lexiconList {
@@ -116,18 +18,29 @@ li {
     max-width: 100%;
     height: auto;
     border-radius: 100%;
-    outline: 8px solid rgb(239, 102, 5);
+    outline: 8px solid #5E503F;;
     box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.4);
 }
 
 .lexiconList img:hover {
-    outline: 8px solid #5E503F;
+    outline: 8px solid #ef6605;
+}
+
+@keyframes bounce {
+    0%, 100% 
+        { transform: translateY(0); }
+    25% 
+        { transform: translateY(-10px); }
+    50% 
+        { transform: translateY(0); }
+    75% 
+        { transform: translateY(-5px); } 
 }
 
 .heading {
     text-align: center;
-    margin: 10%;
-    padding: 5%;
+    margin-top: 10%;
+    margin-bottom: 5%;
     font-family: Baloo;
     font-size: 7cqw;
     border-radius: 100%;
@@ -135,11 +48,7 @@ li {
     color: #D5F2E3;
     text-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-h2 {
-    font-family: Suisse;
-    font-weight:lighter;
+    animation: bounce 2s infinite; 
 }
 
 label {
@@ -156,10 +65,6 @@ label {
     background-color: #e6e5db;
 }
 
-p {
-    font-family:  Helvetica;
-}
-
 select {
     width: 100%;
     padding: 10px;
@@ -174,6 +79,7 @@ select:hover {
 
 form {
     padding-bottom: 5%;
+    margin: 0 auto;
 }
 
 input {
@@ -181,11 +87,15 @@ input {
     width: 100%;
     padding: 10px;
     color: white;
-    background-color: #005238;
+    background-color: #EF6605;
     border: none;
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
+}
+
+input:hover {
+    background-color: #5E503F;
 }
 
 #lexiconGrid {
@@ -205,15 +115,15 @@ input {
 
 .title {
     color: #5E503F;
+    font-family: Baloo;
     padding: 5%;
     font-size: 30px;
     border-radius: 5%;
-    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-decoration: none;
 }
 
 .title:hover {
-    color: #3a3328;
+    color: #E7732A;
 }
 
 a {
@@ -224,8 +134,29 @@ a {
     display: none;
 }
 
-@media (max-width: 790px){
-   
+.scroll-up {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+
+@media (max-width: 790px) {
+
+    .heading {
+        font-size: 3em;
+        padding: 5%;
+        margin-top: 20%;
+        margin-bottom: 20%;
+    }
+
+    form {
+        margin-top: 20%;
+        margin-bottom: 20%;
+    }
+
     .lexiconGrid {
         display: list-item;
     }
@@ -239,12 +170,12 @@ a {
     .nav-menu {
         position: fixed;
         left: -110%;
-        top: 0;
-        height: 100vh; /* Fill the entire screen height */
+        height: 100vh;
         background-color: #1AA758;
         width: 100%;
-        text-align: center;
+        text-align: left;
         transition: 0.6s;
+        z-index: 3;
     }
 
     .nav-menu.active {
@@ -253,6 +184,7 @@ a {
 
     .hamburger {
         display: block;
+        margin-right: 15%;
     }
 
     .hamburger.active .bar:nth-child(2) {
@@ -276,9 +208,9 @@ a {
     .nav-item:hover {
         color: #8fd5ad;
     }
-    
+
     .nav-menu {
-        top: 150px;
+        top: 180px;
         display: list-item;
         gap: 60px;
     }

@@ -1,5 +1,76 @@
-main {
-    margin: 0 10% 10% 10%;
+@font-face {
+    font-family: Baloo;
+    src: url(font/Baloo-Regular.ttf);
+}
+
+@font-face {
+    font-family: Suisse;
+    src: url(font/SuisseIntl-SemiBold\(2\).ttf);
+}
+
+* {
+    margin: 0;
+}
+
+html {
+    background-color: #D5F2E3;
+}
+
+header {
+    background-color: #1AA758;
+    padding: 20px 20px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 0; 
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    margin-right: 2%;
+}
+
+.nav-item {
+    background-color: #005238;
+    padding: 5%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.nav-link {
+    transition: 0.7 ease;
+}
+
+.nav-link:hover {
+    color: #8fd5ad;;
+}
+
+.nav-menu a, .logo {
+    text-decoration: none;
+    color: #005238;
+    font-family: Baloo;
+    font-size: 1.5em;
+    color: #D5F2E3;
+}
+
+li {
+    list-style: none;
+}
+
+.logo {
+    background-image: url('icon/favicon.png');
+    width: 160px;
+    height: 160px;
+    background-size: cover;    
 }
 
 .lexiconGrid {
@@ -7,6 +78,21 @@ main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 100px;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #D5F2E3;
 }
 
 .lexiconList {
@@ -55,6 +141,12 @@ main {
     animation: bounce 2s infinite; 
 }
 
+
+h2 {
+    font-family: Suisse;
+    font-weight:lighter;
+}
+
 label {
     display: block;
     margin-bottom: 10px;
@@ -67,6 +159,10 @@ label {
 
 #mushroom:hover {
     background-color: #e6e5db;
+}
+
+p {
+    font-family:  Helvetica;
 }
 
 select {
@@ -127,7 +223,7 @@ input:hover {
 }
 
 .title:hover {
-    color: #E7732A;
+    color: #EF6605;
 }
 
 a {
@@ -146,8 +242,20 @@ a {
     z-index: 2;
 }
 
+footer {
+    background-color: #E7732A;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.2);
+}
 
-@media (max-width: 790px) {
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+@media (max-width: 800px) {
 
     .heading {
         font-size: 3em;

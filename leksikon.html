@@ -6,49 +6,96 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex, nofollow">
-    <link rel="icon" type="image/icon" href="">    
+    <link rel="icon" type="image/icon" href="icon/favicon.png">    
     <link rel="stylesheet" href="leksikon.css">
-    <title>VILD MAD: Leksikon</title>
+    <link rel="stylesheet" href="mutual.css">
+    <title>FUNGI KIDS: Leksikon</title> 
 </head>
 
-<nav class="navbar">
-    <a href="leksikon.html" class="logo">VILD <span>MAD</span></a>
-
-        <ul class="nav-menu">
-
-            <li class="nav-item">
-                <a href="leksikon.html" class="nav-link">Sæsoner</a>
-            </li>
-
-            <li class="nav-item">
-                <a href="leksikon.html" class="nav-link">Leksikon</a>
-            </li>
-
-            <li class="nav-item">
-                <a href="leksikon.html" class="nav-link">Terræn</a>
-            </li>
-        </ul>
-</nav>
-
 <body>
+            <header>
+                
+                <nav class="navbar">
+                <a href="index.html" class="logo"></a>
+        
+                    <ul class="nav-menu">
+                        <li class="nav-item">
+                            <a href="leksikon.html" class="nav-link">LEKSIKON</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="skov.html" class="nav-link">SKOVE</a>
+                        </li>
+                    </ul>    
+                    
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </nav>
+            </header>
+<main>
 
-    <h1>Leksikon</h1>
+    <h1 class="heading">LEKSIKON</h1>
+
+    <form>
+        <h2>For de hurtige:</h2>
+        <label for="mushroom"></label>
+        <select id="mushroom" name="mushroom">
+            <option value="Brun Skælrørhat">Brun Skælrørhat</option>
+            <option value="Brungul Rørhat">Brungul Rørhat</option>
+            <option value="Brunstokket Rørhat">Brunstokket Rørhat</option>
+            <option value="Granmælkehat">Granmælkehat</option>
+            <option value="Honningsvamp">Honningsvamp</option>
+            <option value="Hummerskørhat">Hummerskørhat</option>
+            <option value="Kantarel, almindelig">Kantarel</option>
+            <option value="Karl Johan">Karl Johan</option>
+            <option value="Morkel, almindelig">Morkel</option>
+            <option value="Pigsvamp, almindelig">Pigsvamp</option>
+            <option value="Rød Birkerørhat">Rød Birkerørhat</option>
+            <option value="Skællet Stilkporesvamp">Skællet Stilkporesvamp</option>
+            <option value="Stor Løghat">Stor Løghat</option>
+            <option value="Svovlporesvamp">Svovlporesvamp</option>
+            <option value="Tragtkantarel">Tragtkantarel</option>
+            <option value="Violet Hekseringridderhat">Violet Hekseringridderhat</option>
+            <option value="Vårmusseron">Vårmusseron</option>
+            <option value="Østershat, almindelig">Østershat</option>
+                    </select>
+        <input type="submit" value="Go!">
+    </form>
     
-    <div id="lexiconGrid">
-
+    <div class="lexiconGrid">
         <template id="lexiconTemplate">
             <article class="lexiconList">
-                    <img src="img/super-mushroom.svg" alt="Svamp">
-                    <h2>Svamp 1</h2>
-                    <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam perspiciatis repellendus reprehenderit, adipisci voluptatum ut ullam veritatis possimus deserunt quisquam.</h3>
-                    <p class="readMore"><a href="#">Læs mere</a></p>
-                </div>
-                </div>
-        </article>
+                <p class="id"></p>
+                <a class="billedeKlik" href="svamp.html">
+                    <img src="" alt="Svamp">
+                    <p class="title"></p>
+                </a>
+            </article>
         </template>
-</body>
-    
-    
+    </div>
+
+    <a href="#top" class="scroll-up">
+    <img src="img/arrowup.png" alt="Arrow up" width="100" height="100">
+    </a>
+
+</main>    
+
+<footer>
+    <div class="footer-content">
+        <p>&copy;<strong> Vild Mad</strong></p> 
+        <br>
+        <p>2MMD Hold A</p>
+        <br>
+        <p>Gruppe 5</p>
+    </div>
+</footer>
+
     <script src="leksikon.js"></script>
+    <script src="mutual.js"></script>
+
+
 </body>
 </html>
+

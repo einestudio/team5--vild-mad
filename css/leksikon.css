@@ -1,7 +1,3 @@
-main {
-    margin: 0 10% 10% 10%;
-}
-
 .lexiconGrid {
     list-style: none;
     display: grid;
@@ -170,13 +166,15 @@ a {
         margin-bottom: 20%;
     }
 
-    .lexiconGrid {
-        display: list-item;
-    }
-
     .navbar {
         position: relative;
         padding: 0;
         margin: 0;
+    }
+}
+
+@media (max-width: 1050px) {
+    .lexiconGrid {
+        display: list-item;
     }
 }

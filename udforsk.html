@@ -1,50 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FUNGI KIDS: Vælg en skov</title> 
-  <link rel="stylesheet" href="udforsk.css" />
-  <link rel="stylesheet" href="mutual.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" type="image/icon" href="icon/favicon.png">    
+  <link rel="stylesheet" href="css/udforsk.css">
+  <link rel="stylesheet" href="css/mutual.css">
+  <title>FUNGI KIDS: Vælg en skov</title>
 </head>
 
 <body>
   <header>
     <nav class="navbar">
-      <a href="index.html" class="logo"></a>
+        <a href="index.html" class="logo"></a>
 
-      <ul class="nav-menu">
-        <li class="nav-item">
-          <a href="leksikon.html" class="nav-link">LEKSIKON</a>
-        </li>
+        <ul class="nav-menu">
+            <li class="nav-item" onclick="window.location.href='leksikon.html'">
+                <a href="leksikon.html" class="nav-link">LEKSIKON</a>
+            </li>
+            <li class="nav-item" onclick="window.location.href='udforsk.html'">
+                <a href="udforsk.html" class="nav-link">UDFORSK</a>
+            </li>
+        </ul>
 
-        <li class="nav-item">
-          <a href="udforsk.html" class="nav-link">SKOVE</a>
-        </li>
-      </ul>
-
-      <div class="hamburger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
     </nav>
-  </header>
-
+</header>
 
   <main>
-    <h1 class="vælgenskov"> Vælg en skov!</h1>
+
+    <br>
+    <h1 class="vælgenskov"> VÆLG EN SKOV!</h1>
 
     <div class="grid_container">
       <div class="venstre">
-        <a href="leksikon.html">
+        <a href="leksikon.html?terrain=Nåleskov">
           <img id="klikbilledevenstre" src="./img/nåleklik.png" alt="nåleskov">
         </a>
       </div>
       <div class="højre">
-        <a href="leksikon.html">
+        <a href="leksikon.html?terrain=Løvskov">
           <img id="klikbilledehøjre" src="./img/løvklik.png" alt="løvskov">
         </a>
       </div>
@@ -53,10 +55,8 @@
 
 
 
-
-
-
   </main>
+
   <footer>
     <div class="footer-content">
       <p>&copy;<strong> Vild Mad</strong></p>
@@ -67,8 +67,7 @@
     </div>
   </footer>
 
-  <script src="mutual.js"></script>
+  <script src="js/mutual.js"></script>
 
 </body>
-
 </html>

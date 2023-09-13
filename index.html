@@ -1,30 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="mutual.css">
-    <title>FUNGI KIDS: Startside</title>
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="icon" type="image/icon" href="icon/favicon.png">    
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/mutual.css">
+    <title>FUNGI KIDS: Forside</title> 
 </head>
 
 <body>
     <header>
         <nav class="navbar">
             <a href="index.html" class="logo"></a>
-
+    
             <ul class="nav-menu">
-                <li class="nav-item">
+                <li class="nav-item" onclick = "window.location.href = 'leksikon.html'">
                     <a href="leksikon.html" class="nav-link">LEKSIKON</a>
                 </li>
-
-                <li class="nav-item">
-                    <a href="udforsk.html" class="nav-link">SKOVE</a>
+                <li class="nav-item" onclick = "window.location.href = 'udforsk.html'">
+                    <a href="udforsk.html" class="nav-link">UDFORSK</a>
                 </li>
             </ul>
-
+    
             <div class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -32,7 +33,11 @@
             </div>
         </nav>
     </header>
-    <main>
+    
+
+<main>
+
+
         <div class="container">
             <div class="skov">
                 <div class="fungi">
@@ -44,9 +49,19 @@
     </main>
     
 
-  <script src="mutual.js"></script>
+  <script src="js/mutual.js"></script>
+
+
+  <footer>
+    <div class="footer-content">
+        <p>&copy;<strong> Vild Mad</strong></p> 
+        <br>
+        <p>2MMD Hold A</p>
+        <br>
+        <p>Gruppe 5</p>
+    </div>
+</footer>
+
 
 </body>
-
-
 </html>

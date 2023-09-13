@@ -43,17 +43,21 @@ main {
 
 .heading {
     text-align: center;
-    margin-top: 10%;
+    width: 60%;
+    margin: 0 auto; 
+    margin-top: 5%;
     margin-bottom: 5%;
     font-family: Baloo;
-    font-size: 7cqw;
-    border-radius: 100%;
+    font-size: 5cqw;
+    border-radius: 50px;
     background-color: #005238;
     color: #D5F2E3;
     text-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     animation: bounce 2s infinite; 
 }
+
+
 
 label {
     display: block;
@@ -75,6 +79,7 @@ select {
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
+    box-shadow: px 0px 10px rgba(0, 0, 0, 0.4);
 }
 
 select:hover {
@@ -91,11 +96,12 @@ input {
     width: 100%;
     padding: 10px;
     color: white;
-    background-color: #EF6605;
+    background-color: #E7732A;
     border: none;
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
+    box-shadow: 0px 3px 16px rgba(0, 0, 0, 0.4);
 }
 
 input:hover {
@@ -110,6 +116,7 @@ input:hover {
 .lexiconList img {
     max-width: 100%;
     height: auto;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.4);
 }
 
 .lexicon h3 {
@@ -144,10 +151,12 @@ a {
     right: 0;
     cursor: pointer;
     z-index: 2;
+    margin-right: 2%;
+    margin-bottom: 2%;
 }
 
 
-@media (max-width: 790px) {
+@media (max-width: 800px) {
 
     .heading {
         font-size: 3em;
@@ -169,53 +178,5 @@ a {
         position: relative;
         padding: 0;
         margin: 0;
-    }
-
-    .nav-menu {
-        position: fixed;
-        left: -110%;
-        height: 100vh;
-        background-color: #1AA758;
-        width: 100%;
-        text-align: left;
-        transition: 0.6s;
-        z-index: 3;
-    }
-
-    .nav-menu.active {
-        left: 0;
-    }
-
-    .hamburger {
-        display: block;
-        margin-right: 15%;
-    }
-
-    .hamburger.active .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    .hamburger.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
-
-    .hamburger.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-    }
-
-    .nav-item {
-        background-color: transparent;
-        box-shadow: none;
-        font-size: 20px;
-    }
-
-    .nav-item:hover {
-        color: #8fd5ad;
-    }
-
-    .nav-menu {
-        top: 180px;
-        display: list-item;
-        gap: 60px;
     }
 }

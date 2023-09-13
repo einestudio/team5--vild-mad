@@ -11,18 +11,3 @@ fetch("https://evadagvbxyuoxojkujjj.supabase.co/rest/v1/vildmad_svampe" ,  {
     },
 })
 
-
-.then(response => response.json())
-.then(showData) 
-
-function showData(terrain){
-    console.log(terrain);
-    terrain.forEach(element => {
-
-        if (element.tags) {
-            
-            if(element.tags.includes("løvskov"))
-            console.log(element);
-        }
-    });
-}

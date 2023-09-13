@@ -25,11 +25,8 @@
     margin: 50px auto 0; 
 }
 
-
-
 .fungi{
     position: absolute;
-    top: -300px; 
     left: 8%; 
     right: 0;
     bottom: 0;
@@ -59,11 +56,9 @@
     box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.4);
 }
 
-
 .knap:hover {
-    background-color: #005238; 
-    
-}
+    background-color: #005238;  
+} 
 
 @media (max-width: 790px) {
 
@@ -73,7 +68,6 @@
 
     .fungi {
         position: absolute;
-        top: -200px;
         left: 8%;
         right: 0;
         bottom: 0;

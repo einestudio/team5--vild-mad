@@ -1,9 +1,9 @@
-.title, .box2 {
+.title,
+.box2 {
   font-family: Baloo;
 }
 
 @media (max-width: 800px) {
-  
   body {
     background-color: #d5e9de;
   }
@@ -15,7 +15,8 @@
     padding-left: 7%;
     padding-right: 7%;
     border-radius: 30px;
-    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.4);    
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.4);
+    
   }
 
   h1 {
@@ -47,7 +48,6 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10%;
-
   }
   .box1 {
     max-width: 100%;
@@ -59,7 +59,7 @@
     border-radius: 10px;
     padding: 10px;
     padding-bottom: 10%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
 
   .box2 {
@@ -72,8 +72,7 @@
     margin-top: 20%;
     max-width: 100%;
     font-family: Baloo;
-    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.4);            
-    
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.4);
   }
 
   .id {
@@ -82,15 +81,14 @@
   .arrow {
     max-width: 150px;
     border: none;
-    
   }
-  
 }
 
 @media (min-width: 800px) {
-
   body {
     background-color: #d5e9de;
+    
+    
   }
 
   main {
@@ -100,8 +98,12 @@
     padding-left: 7%;
     padding-right: 7%;
     border-radius: 40px;
-    justify-items: center;
-    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.4);    
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.4);
+    
+   
+    
+    
+    
   }
 
   h1 {
@@ -110,6 +112,8 @@
     color: #564a3b;
     text-align: center;
     text-transform: uppercase;
+    margin-top: 2%;
+    
   }
 
   h2 {
@@ -119,7 +123,8 @@
     line-height: 2.5ch;
     color: #564a3b;
     text-align: inherit;
-    
+    margin: 10%;
+    margin-top: -3%;
   }
 
   p {
@@ -127,7 +132,7 @@
   }
 
   img {
-    width: 275px;
+    width: 80%;
     border-radius: 80%;
     border: 20px solid #d5e9de;
     margin-top: 25%;
@@ -136,10 +141,10 @@
   }
 
   .arrow {
-  max-width: 150px;
-  border: none;
-  margin: -30%;
-}
+    max-width: 150px;
+    border: none;
+    margin: -20%;
+  }
 
   .grid_1-1 {
     display: grid;
@@ -149,22 +154,24 @@
     margin-top: 2em;
     margin-bottom: 3em;
     margin-right: 2em;
+    
   }
 
   .box1 {
-    width: 600px;
-    height: 300px;
+    max-width: 600px;
+   
     background-color: #d5e9de;
     color: #564a3b;
     font-size: 24px;
     border-radius: 35px;
     padding: 5px;
     max-width: 100%;
+
   }
 
   .box2 {
-    width: 200x;
-    height: 60px;
+    max-width: 600px;
+    
     background-color: #d5e9de;
     color: #564a3b;
     font-size: 35px;
@@ -173,6 +180,8 @@
     padding-top: 5%;
     padding-bottom: 2%;
     box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.4);
+    
+    
   }
 
   .id {

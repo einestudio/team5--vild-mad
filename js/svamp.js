@@ -4,6 +4,7 @@ const key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZi
 const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("id");
 
+//fetch data
 fetch("https://evadagvbxyuoxojkujjj.supabase.co/rest/v1/vildmad_svampe?id=eq."+ id , {
     method:"GET",
     headers: {
@@ -16,6 +17,7 @@ fetch("https://evadagvbxyuoxojkujjj.supabase.co/rest/v1/vildmad_svampe?id=eq."+ 
 .then(response => response.json())
 .then((data) => showMushroom(data));
 
+//ændre indhold
 function showMushroom(mushroom) {
 const data = mushroom[0]
 document.querySelector("p.id").textContent=data.id;

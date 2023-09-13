@@ -16,7 +16,7 @@
 .skov {
     width: 800px;
     height: 500px; 
-    background-image: url('img/naaleskov.jpg'); 
+    background-image: url(../img/naaleskov.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 10%;

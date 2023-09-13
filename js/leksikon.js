@@ -1,13 +1,13 @@
 // PRODUCTLIST
 
 const urlParams = new URLSearchParams(window.location.search);
-const mushroom = urlParams.get("mushroom");
-const categoryParam = mushroom ? "?mushroom="+mushroom :''
+const terrain = urlParams.get("terrain");
+const categoryParam = "?terrain=eq."+terrain
 
 // https://evadagvbxyuoxojkujjj.supabase.co
 const key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImV2YWRhZ3ZieHl1b3hvamt1ampqIiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTM5MjM5NjcsImV4cCI6MjAwOTQ5OTk2N30.oui0N1mwqpMeY71DvXuaNMExuUVwIU0gaLPKon7UgiA"
 
-fetch("https://evadagvbxyuoxojkujjj.supabase.co/rest/v1/vildmad_svampe" ,  {
+fetch("https://evadagvbxyuoxojkujjj.supabase.co/rest/v1/vildmad_svampe"+categoryParam ,  {
     method:"GET",
     headers: {
         apikey:
@@ -34,18 +34,4 @@ function showMushroom(mushroom) {
     copy.querySelector(".billedeKlik").setAttribute("href", `svamp.html?id=${mushroom.id}`);
     document.querySelector(".lexiconGrid").appendChild(copy);
 }
-
-// FORMS
-
-const form = document.querySelector('form');
-
-form.addEventListener('submit', function (e) {
-    e.preventDefault();
-
-    const select = document.getElementById('mushroom');
-    const selectedOptionValue = select.id;
-
-    window.location.href = `svamp.html?id=${selectedOptionValue}`;
-});
-
 

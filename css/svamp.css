@@ -87,7 +87,6 @@
 
   body {
     background-color: #d5e9de;
-    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.4);    
   }
 
   main {
@@ -116,8 +115,6 @@
     line-height: 2.5ch;
     color: #564a3b;
     text-align: inherit;
-    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.4);
-
     
   }
 
@@ -138,7 +135,6 @@
   max-width: 150px;
   border: none;
   margin: -30%;
-  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.4);
 }
 
   .grid_1-1 {

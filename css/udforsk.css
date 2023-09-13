@@ -21,25 +21,29 @@
 } 
 .venstre {
   max-width: 80%; 
-
-animation: bounce 3s infinite;
+  animation: bounce 3s infinite;
 }
+
 .venstre:hover{
   background-color: #E7732A;  /*orange eller grøn? eller an af hver?*/
   border-radius: 50%;
   animation: bounce 2s infinite;
   max-width: 75%;
-
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
 .højre {
   max-width: 80%; 
   animation: bounce 3s infinite;
 }
+
 .højre:hover{
   background-color:  #E7732A; 
   border-radius: 50%;
   animation: bounce 2s infinite;
   max-width: 75%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
 
 
 }
@@ -72,7 +76,7 @@ animation: bounce 3s infinite;
     border-radius: 50px; 
     margin: 10px auto;
     max-width: 400px;
-
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 790px) {

@@ -1,11 +1,11 @@
 @font-face {
     font-family: Baloo;
-    src: url(font/Baloo-Regular.ttf);
+    src: url(../font/Baloo-Regular.ttf);
 }
 
 @font-face {
     font-family: Suisse;
-    src: url(font/SuisseIntl-SemiBold\(2\).ttf);
+    src: url(../font/SuisseIntl-SemiBold\(2\).ttf);
 }
 
 * {
@@ -55,7 +55,7 @@ header {
 }
 
 .nav-link:hover {
-    color: #8fd5ad;;
+    color: #E7732A;
 }
 
 .nav-menu a, .logo {
@@ -90,11 +90,6 @@ li {
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     background-color: #D5F2E3;
-}
-
-h2 {
-    font-family: Suisse;
-    font-weight:lighter;
 }
 
 label {

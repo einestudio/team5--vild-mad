@@ -16,7 +16,7 @@
 .skov {
     width: 800px;
     height: 500px; 
-    background-image: url('img/naaleskov.jpg'); 
+    background-image: url('../img/naaleskov.jpg'); 
     background-size: cover;
     background-position: center;
     border-radius: 10%;
@@ -30,7 +30,7 @@
     right: 0;
     bottom: 0;
     margin: 0 auto;
-    background-image: url('img/fungikids.png'); 
+    background-image: url('../img/fungikids.png'); 
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;

@@ -91,7 +91,7 @@ input {
     width: 100%;
     padding: 10px;
     color: white;
-    background-color: #EF6605;
+    background-color: #E7732A;
     border: none;
     border-radius: 5px;
     font-size: 16px;
@@ -170,53 +170,5 @@ a {
         position: relative;
         padding: 0;
         margin: 0;
-    }
-
-    .nav-menu {
-        position: fixed;
-        left: -110%;
-        height: 100vh;
-        background-color: #1AA758;
-        width: 100%;
-        text-align: left;
-        transition: 0.6s;
-        z-index: 3;
-    }
-
-    .nav-menu.active {
-        left: 0;
-    }
-
-    .hamburger {
-        display: block;
-        margin-right: 15%;
-    }
-
-    .hamburger.active .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    .hamburger.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
-
-    .hamburger.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-    }
-
-    .nav-item {
-        background-color: transparent;
-        box-shadow: none;
-        font-size: 20px;
-    }
-
-    .nav-item:hover {
-        color: #8fd5ad;
-    }
-
-    .nav-menu {
-        top: 180px;
-        display: list-item;
-        gap: 60px;
     }
 }

@@ -43,11 +43,12 @@
     max-width: 80%;
     height: auto;
     border-radius: 80%;
-    border: 20px solid #d5e9de;
+    border: 20px solid #1AA758;
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10%;
+    
   }
   .box1 {
     max-width: 100%;
@@ -59,7 +60,7 @@
     border-radius: 10px;
     padding: 10px;
     padding-bottom: 10%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.4);
   }
 
   .box2 {
@@ -78,6 +79,7 @@
   .id {
     display: none;
   }
+
   .arrow {
     max-width: 150px;
     border: none;
@@ -99,10 +101,7 @@
     padding-right: 7%;
     border-radius: 40px;
     box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.4);
-    
-   
-    
-    
+  
     
   }
 
@@ -138,6 +137,7 @@
     margin-top: 25%;
     margin-left: -10%;
     margin-right: 20%;
+    
   }
 
   .arrow {
@@ -159,13 +159,14 @@
 
   .box1 {
     max-width: 600px;
-   
     background-color: #d5e9de;
     color: #564a3b;
     font-size: 24px;
     border-radius: 35px;
     padding: 5px;
     max-width: 100%;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.4);
+
 
   }
 

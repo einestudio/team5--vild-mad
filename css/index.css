@@ -50,7 +50,7 @@
     color:  #D5F2E3; 
     text-decoration: none;
     font-size: 40px;
-    border-radius: 50px;
+    border-radius: 50%;
     transition: background-color 0.3s ease;
     font-family: Suisse;
     animation: bounce 3s infinite;
@@ -86,21 +86,20 @@
 
     .fungi {
         position: absolute;
-        top: 0;
-        left: 8%;
+        top: -10%;
+        left: -8%;
         right: 0;
         bottom: 0;
         margin: 0 auto;
         background-size: contain;
         height: auto;
-        width: 90%;
-
+        width: 120%;
     }
 
     .knap {
-        top: 90%;
+        left: 12%;
+        top: 80%;
         padding: 20px 40px;
-        font-size: 24px;
-        border-radius: 20px;
-    }
+        font-size: 30px;
+´    }
 }

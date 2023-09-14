@@ -123,19 +123,6 @@
     text-align: center;
   }
 
-  img {
-    width: 80%;
-    border-radius: 80%;
-<<<<<<< HEAD
-    border: 20px solid #1AA758;
-=======
-    border: 20px solid #1aa758;
->>>>>>> 9232ff73e676f90394af3ca97c054446f2a29caa
-    margin-top: 25%;
-    margin-left: -10%;
-    margin-right: 20%;
-  }
-
   .arrow {
     max-width: 150px;
     border: none;

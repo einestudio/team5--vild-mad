@@ -2,8 +2,8 @@
 
 const urlParams = new URLSearchParams(window.location.search);
 const terrain = urlParams.get("terrain");
-let categoryParam="";
-if(terrain){
+let categoryParam = "";
+if (terrain) {
     categoryParam = "?terrain=eq."+terrain
 }
 

@@ -25,7 +25,8 @@
 
 .fungi{
     position: absolute;
-    left: 8%; 
+    left: -2%; 
+    top: -150px;
     right: 0;
     bottom: 0;
     margin: 0 auto;
@@ -33,14 +34,15 @@
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    height: 800px;
-    width:800px;
+    height: 110%;
+    width: 110%;
+    pointer-events: none;    
 }
 
 .knap {
     position: absolute;
-    top: 75%; 
-    left: 50%; 
+    top: 70%; 
+    left: 27%; 
     transform: translate(-50%, -50%); 
     display: inline-block;
     padding: 40px 100px;
@@ -51,7 +53,19 @@
     border-radius: 50px;
     transition: background-color 0.3s ease;
     font-family: Suisse;
+    animation: bounce 3s infinite;
 }
+
+@keyframes bounce {
+    0%, 100% 
+        { transform: translateY(0); }
+    25% 
+        { transform: translateY(-10px); }
+    50% 
+        { transform: translateY(0); }
+    75% 
+        { transform: translateY(-5px); } 
+  }
 
 
 .knap:hover {
@@ -61,6 +75,11 @@
 
 @media (max-width: 790px) {
 
+
+    .knap {
+        left: 18%; 
+
+    }
     .skov {
         width: auto;
     }

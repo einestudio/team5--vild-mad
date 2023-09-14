@@ -58,13 +58,6 @@ header {
     font-size: 1.5em;
 }
 
-.logo {
-    text-decoration: none;
-    color: #005238;
-    font-family: Baloo;
-    font-size: 1.5em;
-}
-
 li {
     list-style: none;
 }
@@ -74,7 +67,6 @@ li {
     width: 160px;
     height: 160px;
     background-size: cover;
-    color: transparent;  
 }
 
 .hamburger {
@@ -136,7 +128,7 @@ a {
 
 footer {
     background-color: #E7732A;
-    color: #fff;
+    color: #D5F2E3;
     text-align: center;
     padding: 20px 0;
     box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.2);

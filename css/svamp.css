@@ -16,7 +16,6 @@
     padding-right: 7%;
     border-radius: 30px;
     box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.4);
-    
   }
 
   h1 {
@@ -43,12 +42,11 @@
     max-width: 80%;
     height: auto;
     border-radius: 80%;
-    border: 20px solid #1AA758;
+    border: 20px solid #1aa758;
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10%;
-    
   }
   .box1 {
     max-width: 100%;
@@ -89,8 +87,6 @@
 @media (min-width: 800px) {
   body {
     background-color: #d5e9de;
-    
-    
   }
 
   main {
@@ -101,8 +97,6 @@
     padding-right: 7%;
     border-radius: 40px;
     box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.4);
-  
-    
   }
 
   h1 {
@@ -112,7 +106,6 @@
     text-align: center;
     text-transform: uppercase;
     margin-top: 2%;
-    
   }
 
   h2 {
@@ -133,11 +126,14 @@
   img {
     width: 80%;
     border-radius: 80%;
+<<<<<<< HEAD
     border: 20px solid #1AA758;
+=======
+    border: 20px solid #1aa758;
+>>>>>>> 9232ff73e676f90394af3ca97c054446f2a29caa
     margin-top: 25%;
     margin-left: -10%;
     margin-right: 20%;
-    
   }
 
   .arrow {
@@ -154,7 +150,6 @@
     margin-top: 2em;
     margin-bottom: 3em;
     margin-right: 2em;
-    
   }
 
   .box1 {
@@ -166,13 +161,11 @@
     padding: 5px;
     max-width: 100%;
     box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.4);
-
-
   }
 
   .box2 {
     max-width: 600px;
-    
+
     background-color: #d5e9de;
     color: #564a3b;
     font-size: 35px;
@@ -181,8 +174,6 @@
     padding-top: 5%;
     padding-bottom: 2%;
     box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.4);
-    
-    
   }
 
   .id {

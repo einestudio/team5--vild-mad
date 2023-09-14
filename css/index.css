@@ -21,7 +21,6 @@
     background-position: center;
     border-radius: 10%;
     margin: 50px auto 0; 
-    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.4);
 }
 
 .fungi{
@@ -54,12 +53,7 @@
     border-radius: 50%;
     transition: background-color 0.3s ease;
     font-family: Suisse;
-<<<<<<< HEAD
-    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.4);
-
-=======
     animation: bounce 3s infinite;
->>>>>>> leksikon
 }
 
 @keyframes bounce {

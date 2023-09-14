@@ -3,6 +3,22 @@
   font-family: Baloo;
 }
 
+.box1, .box2{
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.arrow {
+  max-width: 150px;
+  background-color: #D5E9DE;
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.4);
+  border: transparent;
+}
+
+.arrow:hover {
+  outline: 10px solid #1AA758;;  
+}
+
+
 @media (max-width: 800px) {
   body {
     background-color: #d5e9de;
@@ -20,14 +36,14 @@
   }
 
   h1 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica;
     font-size: 30px;
     color: #564a3b;
     text-align: center;
   }
 
   h2 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica;
     font-size: 20px;
     font-weight: 600;
     line-height: 2.5ch;
@@ -53,15 +69,12 @@
   }
   .box1 {
     max-width: 100%;
-    /*width: 500px;
-    height: 300px;*/
     background-color: #d5e9de;
     color: #564a3b;
     font-size: 24px;
     border-radius: 10px;
     padding: 10px;
     padding-bottom: 10%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
 
   .box2 {
@@ -74,7 +87,6 @@
     margin-top: 20%;
     max-width: 100%;
     font-family: Baloo;
-    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.4);
   }
 
   .id {
@@ -84,15 +96,13 @@
   .arrow {
     max-width: 150px;
     border: none;
-    background-color: #D5E9DE;
-
+    margin-top: 20%;
   }
 }
 
 @media (min-width: 800px) {
   body {
     background-color: #d5e9de;
-    
     
   }
 
@@ -104,25 +114,19 @@
     padding-right: 7%;
     border-radius: 40px;
     box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.4);
-    
-   
-    
-    
-    
   }
 
   h1 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica;
     font-size: 40px;
     color: #564a3b;
     text-align: center;
     text-transform: uppercase;
-    margin-top: 2%;
-    
+    margin-top: 2%;  
   }
 
   h2 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica;
     font-size: 20px;
     font-weight: 600;
     line-height: 2.5ch;
@@ -138,16 +142,9 @@
 
   img {
     width: 80%;
-    border-radius: 80%;
     border: 20px solid #1AA758;
-    
-
-  }
-
-  .arrow {
-    max-width: 150px;
-    border: none;
-    margin: -20%;
+    border-radius: 80%;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.4);
   }
 
   .grid_1-1 {
@@ -158,7 +155,6 @@
     margin-top: 2em;
     margin-bottom: 3em;
     margin-right: 2em;
-    
   }
 
   .box1 {
@@ -171,13 +167,10 @@
     padding: 5px;
     max-width: 100%;
     box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.4);
-
-
   }
 
   .box2 {
     max-width: 600px;
-    
     background-color: #d5e9de;
     color: #564a3b;
     font-size: 35px;
@@ -185,9 +178,6 @@
     margin-top: 10%;
     padding-top: 5%;
     padding-bottom: 2%;
-    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.4);
-    
-    
   }
 
   .id {

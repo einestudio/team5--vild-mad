@@ -91,6 +91,21 @@ li {
     background-color: #D5F2E3;
 }
 
+.heading {
+    text-align: center;
+    width: 60%;
+    margin: 0 auto; 
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-family: Baloo;
+    font-size: 4cqw;
+    border-radius: 50px;
+    background-color: #005238;
+    color: #D5F2E3;
+    text-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 label {
     font-size: 20px;
     font-weight: bold;
@@ -142,12 +157,13 @@ footer a {
     .nav-menu {
         position: fixed;
         left: -110%;
-        height: 80vh;
         background-color: #1AA758;
         width: 100%;
         transition: 0.6s;
         z-index: 3;
-        top: 180px;
+        top: 160px;
+        padding-top: 20%;
+        padding-bottom: 80%;
         display: flex; 
         flex-direction: column;
         justify-content: center; 

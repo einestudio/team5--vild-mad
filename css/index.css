@@ -20,34 +20,34 @@
 
 .fungi{
     position: absolute;
-    left: -2%; 
-    top: -150px;
+    top: -140px;
+    left: 0.7%;
     right: 0;
     bottom: 0;
     margin: 0 auto;
-    background-image: url('../img/fungikids.png'); 
+    background-image: url('../img/fungikidslogo.png'); 
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    height: 110%;
-    width: 110%;
+    height: auto%;
+    width: 100%;
     pointer-events: none;    
 }
 
 .knap {
+    font-family: Baloo;
     position: absolute;
     top: 70%; 
-    left: 27%; 
+    left: 30%; 
     transform: translate(-50%, -50%); 
     display: inline-block;
-    padding: 40px 100px;
+    padding: 20px 50px;
     background-color: #E7732A; 
     color:  #D5F2E3; 
     text-decoration: none;
     font-size: 40px;
-    border-radius: 50%;
+    border-radius: 50px;
     transition: background-color 0.3s ease;
-    font-family: Suisse;
     animation: bounce 3s infinite;
 }
 

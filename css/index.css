@@ -3,11 +3,6 @@
     src: url(font/Baloo-Regular.ttf);
 }
 
-@font-face {
-    font-family: Suisse;
-    src: url(font/SuisseIntl-SemiBold\(2\).ttf);
-}
-
  .container {
     position: relative;
     text-align: center;

@@ -26,15 +26,9 @@
     outline: 8px solid #ef6605;
 }
 
-@keyframes bounce {
-    0%, 100% 
-        { transform: translateY(0); }
-    25% 
-        { transform: translateY(-10px); }
-    50% 
-        { transform: translateY(0); }
-    75% 
-        { transform: translateY(-5px); } 
+h2 {
+    font-family: Baloo;
+    color: #5E503F;
 }
 
 .heading {
@@ -50,9 +44,7 @@
     color: #D5F2E3;
     text-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    animation: bounce 2s infinite; 
 }
-
 
 
 label {
@@ -95,8 +87,9 @@ input {
     background-color: #E7732A;
     border: none;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 20px;
     cursor: pointer;
+    font-family: Baloo;
     box-shadow: 0px 3px 16px rgba(0, 0, 0, 0.4);
 }
 
@@ -140,17 +133,6 @@ a {
 .id {
     display: none;
 }
-
-.scroll-up {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    cursor: pointer;
-    z-index: 2;
-    margin-right: 2%;
-    margin-bottom: 2%;
-}
-
 
 @media (max-width: 800px) {
 

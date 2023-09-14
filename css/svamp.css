@@ -12,10 +12,11 @@
   background-color: #D5E9DE;
   box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.4);
   border: transparent;
+  margin-top: -100%;
 }
 
 .arrow:hover {
-  outline: 10px solid #1AA758;;  
+  outline: 10px solid #1AA758;  
 }
 
 
